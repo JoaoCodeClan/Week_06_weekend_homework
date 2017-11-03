@@ -26,6 +26,26 @@ public abstract class ShopObject implements Sellable {
 
     }
 
+
+    public double getBuyPrice(){
+        return this.buyPrice;
+
+    }
+
+    public double getSellPrice(){
+        return this.sellPrice;
+
+    }
+
+    public void setBuyPrice(Double price){
+        this.buyPrice = price;
+
+    }
+
+    public void setSellPrice(Double price){
+        this.sellPrice = price;
+
+    }
 }
 
 

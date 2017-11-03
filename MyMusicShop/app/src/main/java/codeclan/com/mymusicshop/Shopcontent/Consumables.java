@@ -17,4 +17,10 @@ public class Consumables extends ShopObject {
 
     }
 
+
+    public String getType(){
+
+        return this.type;
+    }
+
 }
