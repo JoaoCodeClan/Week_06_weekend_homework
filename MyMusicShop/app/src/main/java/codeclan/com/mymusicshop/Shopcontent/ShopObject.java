@@ -7,14 +7,25 @@ import codeclan.com.mymusicshop.Interfaces.Sellable;
  */
 
 public abstract class ShopObject implements Sellable {
-     Double buyPrice;
-     Double sellPrice;
+    private Double buyPrice;
+    private Double sellPrice;
 
 
     public ShopObject( Double buyPrice, Double sellPrice){
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
-        
+
 
     }
+
+
+    public double calculateMarkup(){
+        double markup = this.buyPrice - this.sellPrice;
+
+        return markup;
+
+    }
+
 }
+
+
