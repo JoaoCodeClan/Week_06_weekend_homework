@@ -4,7 +4,7 @@ package codeclan.com.mymusicshop.Shopcontent;
  * Created by user on 04/11/2017.
  */
 
-enum Intensity {
+ public enum Intensity {
 
     VERYLOUD,
     LOUD,
