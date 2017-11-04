@@ -17,6 +17,32 @@ public class Strings extends Instruments {
         this.numberOfStrings = numberOfStrings;
 
     }
+    public String play() {
+        return super.play() + "playing a " + this.type;
+    }
 
+    public String getType() {
+        return this.type;
+    }
+
+    public void setType(String newType) {
+        this.type = newType;
+    }
+
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String newName) {
+        this.name = newName;
+    }
+    public int getNumberOfStrings() {
+        return this.numberOfStrings;
+    }
+
+    public void setNumberOfStrings(int newNumberOfStrings) {
+        this.numberOfStrings = newNumberOfStrings;
+    }
 
 }
