@@ -15,7 +15,7 @@ public class Strings extends Instruments {
         this.type = type;
         this.name = name;
         this.numberOfStrings = numberOfStrings;
-        
+
     }
 
 
