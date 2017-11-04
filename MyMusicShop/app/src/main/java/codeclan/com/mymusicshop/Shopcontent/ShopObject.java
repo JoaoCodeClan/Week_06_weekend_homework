@@ -20,7 +20,7 @@ public abstract class ShopObject implements Sellable {
 
 
     public double calculateMarkup(){
-        double markup = this.buyPrice - this.sellPrice;
+        double markup = this.sellPrice - this.buyPrice;
 
         return markup;
 
