@@ -75,4 +75,18 @@ public class StringsTest {
 
         assertEquals(" I'm having fun playing a Guitar", guitar.play());
     }
+    @Test
+
+    public void canGetBuyPrice() {
+        assertEquals(300.0, guitar.getBuyPrice());
+
+    }
+
+    @Test
+
+    public void canSetBuyPrice() {
+        guitar.setBuyPrice(5000.0);
+        assertEquals(5000.0, guitar.getBuyPrice());
+
+    }
 }
