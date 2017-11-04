@@ -21,7 +21,7 @@ public abstract class Instruments extends ShopObject implements Playable {
     }
 
     public String play() {
-        return " I'm having fun";
+        return " I'm having fun ";
     }
 
     public String getColour() {
