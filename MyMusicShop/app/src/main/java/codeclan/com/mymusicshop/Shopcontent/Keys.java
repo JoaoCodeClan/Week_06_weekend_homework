@@ -18,4 +18,36 @@ public class Keys extends Instruments {
         this.numberOfkeys = numberOfKeys;
 
     }
+
+
+    public String play() {
+        return super.play() + "playing a " + this.type;
+    }
+
+    public String getType() {
+        return this.type;
+    }
+
+    public void setType(String newType) {
+        this.type = newType;
+    }
+
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String newName) {
+        this.name = newName;
+    }
+    public int getNumberOfKeys() {
+        return this.numberOfkeys;
+    }
+
+    public void setNumberOfkeys(int newNumberOfkeys) {
+        this.numberOfkeys = newNumberOfkeys;
+    }
+
 }
+
+
