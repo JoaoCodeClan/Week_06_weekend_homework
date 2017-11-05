@@ -75,4 +75,21 @@ public class ShopTest {
         assertEquals(0, myshop.stock.size());
     }
 
+    @Test
+    public void canCalculateEstimateProfitButItsZero(){
+
+        myshop.calculateEstimateProfit();
+        assertEquals(0.0, myshop.calculateEstimateProfit());
+
+    }
+
+    @Test
+    public void canCalculateEstimateProfit(){
+        myshop.addItem(stuff);
+        myshop.calculateEstimateProfit();
+        assertEquals(200.0, myshop.calculateEstimateProfit());
+
+    }
+
+
 }

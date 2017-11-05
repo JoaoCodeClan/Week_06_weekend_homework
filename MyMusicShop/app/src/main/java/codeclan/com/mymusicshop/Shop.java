@@ -39,11 +39,17 @@ public class Shop {
         this.stock.remove(item);
     }
 
+    public double calculateEstimateProfit() {
+        double profit = 0;
 
-//    public String getStock() {
-//        stock
-//        return stock;
-//    }
+
+        for (Sellable item : this.stock) {
+            profit += item.calculateMarkup();
+
+        }
+        return profit;
+    }
+
 
 
 }
