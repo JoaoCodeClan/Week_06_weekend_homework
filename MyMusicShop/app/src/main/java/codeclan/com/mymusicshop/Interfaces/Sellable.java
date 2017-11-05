@@ -6,5 +6,5 @@ package codeclan.com.mymusicshop.Interfaces;
 
 public interface Sellable {
 
-    public double calculateMarkup();
+     double calculateMarkup();
 }

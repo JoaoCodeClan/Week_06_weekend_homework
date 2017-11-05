@@ -12,16 +12,38 @@ public class Shop {
 
 
     private String shopName;
-    private ArrayList<Sellable>stock;
+     ArrayList<Sellable> stock;
 
 
-    public Shop(String shopName, ArrayList<Sellable> stock){
+    public Shop(String shopName){
 
         this.shopName = shopName;
-        this.stock = stock;
+        this.stock = new ArrayList<Sellable>();
 
     }
 
-    
+    public String getShopName() {
+        return this.shopName;
+    }
+
+    public void setShopName(String newShopName) {
+        this.shopName = newShopName;
+    }
+
+    public void addItem(Sellable item) {
+        this.stock.add(item);
+
+    }
+
+    public void removeItem(Sellable item) {
+        this.stock.remove(item);
+    }
+
+
+//    public String getStock() {
+//        stock
+//        return stock;
+//    }
+
 
 }
